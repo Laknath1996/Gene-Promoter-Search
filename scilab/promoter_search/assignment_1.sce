@@ -17,7 +17,7 @@ exec('helper_functions.sce');
 // define useful parameters
 protein_table = 'ProteinTable10668_341867.txt';
 fasta_file = 'Acetobacter tropicalis.fasta';
-local_search = 1;
+local_search = 0;
 intact = 0;
 y = ascii('WWWW'); // query
 thresh_up = 50; //upstream bases
@@ -111,7 +111,27 @@ end
     
 // conduct the statistical alignment
 stat_align_pos = []; // record the stat. alighnment upstream position
+[w,su]=ppm_info(ppm,0.25);
+
+//disp("Entropy of the PPM : ");
+//disp(w);
+//disp("Information content of the PPM : ");
+//disp(su);
+
+NI = sum(su,'r');
+TI = sum(NI);
+
+disp("Net information Content of each Position : ");
+disp(NI);
+disp("Total information Content : ");
+disp(TI);
+
+ppm = ppm(:,1:4); // only the first four bases have higher entropy values
 N_max = size(ppm, 2);
+
+imp = ['CCCC','GGGG']; // improbable promoter sequences
+score_thresh = max(get_score(ascii(imp(1)),ppm),get_score(ascii(imp(2)),ppm)); // get the threshold for the statistical alignment
+
 for n_key=1:num_genes
     dna_seq = get_dna_seq(n_key, fasta_file, gp, gn, thresh_up, thresh_down, num_st_genes); //get the dna sequence
     lg = dna_seq==ascii('A') | dna_seq==ascii('C') | dna_seq==ascii('G') | dna_seq==ascii('T'); // verify the sequence
@@ -119,9 +139,12 @@ for n_key=1:num_genes
         continue;
     end
     d_len = length(dna_seq);
-    [s_mat,sm_pos,sm_seq]=get_motif_score(dna_seq,ppm); // stat. alignment
+    [sm_score,sm_pos,sm_seq]=get_motif_score(dna_seq,ppm); // stat. alignment
     if (sm_pos + N_max - 1 <= d_len - thresh_down) then
-        stat_align_pos = [stat_align_pos, thresh_up - sm_pos + 1]; // record the stat. alighnment upstream position
+        if sm_score > score_thresh  then
+            // disp(ascii(sm_seq));
+            stat_align_pos = [stat_align_pos, thresh_up - sm_pos + 1]; // record the stat. alighnment upstream positio
+        end 
     end
 end
 

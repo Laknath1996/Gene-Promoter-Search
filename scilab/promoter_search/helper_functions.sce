@@ -731,29 +731,31 @@ endfunction
 
 function [w,su]=ppm_info(ppm,p0)
     [m,n]=size(ppm);
-    p_mat = [];
-    for k=1:m
-        p_row = ones(1,n)/p0(k);
-        p_mat = [p_mat; p_row];
-    end
-    w = log(ppm.*p_mat)/log(2);
+//    p_mat = [];
+//    for k=1:m
+//        p_row = ones(1,n)/p0(k);
+//        p_mat = [p_mat; p_row];
+//    end
+    p_mat = ones(m, n)/p0
+//    w = log(ppm.*p_mat)/log(2);
+    w = log(ppm.*p_mat);
     su = ppm.*w;
 endfunction
 
-function [s_mat,sm_pos,sm_seq]=get_motif_score(seq,ppm)
+function [sm_score,sm_pos,sm_seq]=get_motif_score(seq,ppm)
     l_seq = length(seq);
     [m,n]=size(ppm);
     score=[];
-    max_score = 0;
+    max_score = -%inf;
     max_pos = 0;
     max_seq = [];
     for pos=1:(l_seq-n-1)
         sub_seq = seq(pos:(pos+n-1));
-        ss_score=1;
+        ss_score=0;
         for pos_ss=1:n
             bk=get_base_key(sub_seq(pos_ss));
             ppm_s = ppm(bk,pos_ss);
-            ss_score=ss_score*ppm_s;
+            ss_score=ss_score+log(ppm_s);
         end
         score=[score,ss_score];
         if (ss_score>max_score) then
@@ -762,11 +764,21 @@ function [s_mat,sm_pos,sm_seq]=get_motif_score(seq,ppm)
             max_seq=sub_seq;
         end
     end
-    s_mat = score;
+    sm_score = max_score;
     sm_pos = max_pos;
     sm_seq = max_seq;
 endfunction
 
+
+function score = get_score(seq, ppm)
+    score=0;
+    n = size(ppm,2);
+    for pos_ss=1:n
+        bk=get_base_key(seq(pos_ss));
+        ppm_s = ppm(bk,pos_ss);
+        score=score+log(ppm_s);
+    end
+endfunction
 
 //    if n_key > size(gp,1) then 
 //        if gn(n_key-size(gp,1),1)-thresh_up >= 1 then      
