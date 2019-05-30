@@ -17,7 +17,7 @@ exec('helper_functions.sce');
 // define useful parameters
 protein_table = 'ProteinTable10668_341867.txt';
 fasta_file = 'Acetobacter tropicalis.fasta';
-local_search = 0;
+local_search = 1;
 intact = 0;
 y = ascii('WWWW'); // query
 thresh_up = 50; //upstream bases
@@ -132,6 +132,7 @@ N_max = size(ppm, 2);
 imp = ['CCCC','GGGG']; // improbable promoter sequences
 score_thresh = max(get_score(ascii(imp(1)),ppm),get_score(ascii(imp(2)),ppm)); // get the threshold for the statistical alignment
 
+fd = mopen('NIQLS_Stat_Alignment_Results.txt','wt');
 for n_key=1:num_genes
     dna_seq = get_dna_seq(n_key, fasta_file, gp, gn, thresh_up, thresh_down, num_st_genes); //get the dna sequence
     lg = dna_seq==ascii('A') | dna_seq==ascii('C') | dna_seq==ascii('G') | dna_seq==ascii('T'); // verify the sequence
@@ -143,7 +144,8 @@ for n_key=1:num_genes
     if (sm_pos + N_max - 1 <= d_len - thresh_down) then
         if sm_score > score_thresh  then
             // disp(ascii(sm_seq));
-            stat_align_pos = [stat_align_pos, thresh_up - sm_pos + 1]; // record the stat. alighnment upstream positio
+            stat_align_pos = [stat_align_pos, thresh_up - sm_pos + 1];// record the stat. alighnment upstream position
+            mfprintf(fd,'Sequence : %s | Alignment : %s | Score : %0.4f | Position : %i \n',ascii(dna_seq),ascii(sm_seq), sm_score, sm_pos); 
         end 
     end
 end
