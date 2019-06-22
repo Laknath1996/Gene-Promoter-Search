@@ -1,0 +1,294 @@
+
+
+ DIST   = percentage divergence (/100)
+ p      = rate of transition (A <-> G; C <-> T)
+ q      = rate of transversion
+ Length = number of sites used in comparison
+   1 vs.   2:  DIST =  0.0000; p = 0.0000; q = 0.0000; length =   1904
+   1 vs.   3:  DIST =  0.0000; p = 0.0000; q = 0.0000; length =   1904
+   1 vs.   4:  DIST =  0.0000; p = 0.0000; q = 0.0000; length =   1904
+   1 vs.   5:  DIST =  0.0000; p = 0.0000; q = 0.0000; length =   1904
+   1 vs.   6:  DIST =  0.0000; p = 0.0000; q = 0.0000; length =   1904
+   1 vs.   7:  DIST =  0.0000; p = 0.0000; q = 0.0000; length =   1904
+   1 vs.   8:  DIST =  0.0000; p = 0.0000; q = 0.0000; length =   1903
+   1 vs.   9:  DIST =  0.0000; p = 0.0000; q = 0.0000; length =   1903
+   1 vs.  10:  DIST =  0.0352; p = 0.0074; q = 0.0278; length =   1904
+   1 vs.  11:  DIST =  0.0352; p = 0.0074; q = 0.0279; length =   1903
+   1 vs.  12:  DIST =  0.0362; p = 0.0079; q = 0.0284; length =   1904
+   1 vs.  13:  DIST =  0.1250; p = 0.0205; q = 0.1045; length =   1904
+   1 vs.  14:  DIST =  0.1389; p = 0.0247; q = 0.1142; length =   1901
+   1 vs.  15:  DIST =  0.1860; p = 0.0390; q = 0.1470; length =   1898
+   1 vs.  16:  DIST =  0.5854; p = 0.1435; q = 0.4419; length =   1833
+   1 vs.  17:  DIST =  0.5854; p = 0.1435; q = 0.4419; length =   1833
+   1 vs.  18:  DIST =  0.5843; p = 0.1435; q = 0.4408; length =   1833
+   1 vs.  19:  DIST =  0.5903; p = 0.1440; q = 0.4463; length =   1833
+   1 vs.  20:  DIST =  0.5961; p = 0.1471; q = 0.4490; length =   1842
+   1 vs.  21:  DIST =  0.5879; p = 0.1471; q = 0.4408; length =   1842
+   1 vs.  22:  DIST =  0.6012; p = 0.1506; q = 0.4506; length =   1833
+   2 vs.   3:  DIST =  0.0000; p = 0.0000; q = 0.0000; length =   1904
+   2 vs.   4:  DIST =  0.0000; p = 0.0000; q = 0.0000; length =   1904
+   2 vs.   5:  DIST =  0.0000; p = 0.0000; q = 0.0000; length =   1904
+   2 vs.   6:  DIST =  0.0000; p = 0.0000; q = 0.0000; length =   1904
+   2 vs.   7:  DIST =  0.0000; p = 0.0000; q = 0.0000; length =   1904
+   2 vs.   8:  DIST =  0.0000; p = 0.0000; q = 0.0000; length =   1903
+   2 vs.   9:  DIST =  0.0000; p = 0.0000; q = 0.0000; length =   1903
+   2 vs.  10:  DIST =  0.0352; p = 0.0074; q = 0.0278; length =   1904
+   2 vs.  11:  DIST =  0.0352; p = 0.0074; q = 0.0279; length =   1903
+   2 vs.  12:  DIST =  0.0362; p = 0.0079; q = 0.0284; length =   1904
+   2 vs.  13:  DIST =  0.1250; p = 0.0205; q = 0.1045; length =   1904
+   2 vs.  14:  DIST =  0.1389; p = 0.0247; q = 0.1142; length =   1901
+   2 vs.  15:  DIST =  0.1860; p = 0.0390; q = 0.1470; length =   1898
+   2 vs.  16:  DIST =  0.5854; p = 0.1435; q = 0.4419; length =   1833
+   2 vs.  17:  DIST =  0.5854; p = 0.1435; q = 0.4419; length =   1833
+   2 vs.  18:  DIST =  0.5843; p = 0.1435; q = 0.4408; length =   1833
+   2 vs.  19:  DIST =  0.5903; p = 0.1440; q = 0.4463; length =   1833
+   2 vs.  20:  DIST =  0.5961; p = 0.1471; q = 0.4490; length =   1842
+   2 vs.  21:  DIST =  0.5879; p = 0.1471; q = 0.4408; length =   1842
+   2 vs.  22:  DIST =  0.6012; p = 0.1506; q = 0.4506; length =   1833
+   3 vs.   4:  DIST =  0.0000; p = 0.0000; q = 0.0000; length =   1904
+   3 vs.   5:  DIST =  0.0000; p = 0.0000; q = 0.0000; length =   1904
+   3 vs.   6:  DIST =  0.0000; p = 0.0000; q = 0.0000; length =   1904
+   3 vs.   7:  DIST =  0.0000; p = 0.0000; q = 0.0000; length =   1904
+   3 vs.   8:  DIST =  0.0000; p = 0.0000; q = 0.0000; length =   1903
+   3 vs.   9:  DIST =  0.0000; p = 0.0000; q = 0.0000; length =   1903
+   3 vs.  10:  DIST =  0.0352; p = 0.0074; q = 0.0278; length =   1904
+   3 vs.  11:  DIST =  0.0352; p = 0.0074; q = 0.0279; length =   1903
+   3 vs.  12:  DIST =  0.0362; p = 0.0079; q = 0.0284; length =   1904
+   3 vs.  13:  DIST =  0.1250; p = 0.0205; q = 0.1045; length =   1904
+   3 vs.  14:  DIST =  0.1389; p = 0.0247; q = 0.1142; length =   1901
+   3 vs.  15:  DIST =  0.1860; p = 0.0390; q = 0.1470; length =   1898
+   3 vs.  16:  DIST =  0.5854; p = 0.1435; q = 0.4419; length =   1833
+   3 vs.  17:  DIST =  0.5854; p = 0.1435; q = 0.4419; length =   1833
+   3 vs.  18:  DIST =  0.5843; p = 0.1435; q = 0.4408; length =   1833
+   3 vs.  19:  DIST =  0.5903; p = 0.1440; q = 0.4463; length =   1833
+   3 vs.  20:  DIST =  0.5961; p = 0.1471; q = 0.4490; length =   1842
+   3 vs.  21:  DIST =  0.5879; p = 0.1471; q = 0.4408; length =   1842
+   3 vs.  22:  DIST =  0.6012; p = 0.1506; q = 0.4506; length =   1833
+   4 vs.   5:  DIST =  0.0000; p = 0.0000; q = 0.0000; length =   1904
+   4 vs.   6:  DIST =  0.0000; p = 0.0000; q = 0.0000; length =   1904
+   4 vs.   7:  DIST =  0.0000; p = 0.0000; q = 0.0000; length =   1904
+   4 vs.   8:  DIST =  0.0000; p = 0.0000; q = 0.0000; length =   1903
+   4 vs.   9:  DIST =  0.0000; p = 0.0000; q = 0.0000; length =   1903
+   4 vs.  10:  DIST =  0.0352; p = 0.0074; q = 0.0278; length =   1904
+   4 vs.  11:  DIST =  0.0352; p = 0.0074; q = 0.0279; length =   1903
+   4 vs.  12:  DIST =  0.0362; p = 0.0079; q = 0.0284; length =   1904
+   4 vs.  13:  DIST =  0.1250; p = 0.0205; q = 0.1045; length =   1904
+   4 vs.  14:  DIST =  0.1389; p = 0.0247; q = 0.1142; length =   1901
+   4 vs.  15:  DIST =  0.1860; p = 0.0390; q = 0.1470; length =   1898
+   4 vs.  16:  DIST =  0.5854; p = 0.1435; q = 0.4419; length =   1833
+   4 vs.  17:  DIST =  0.5854; p = 0.1435; q = 0.4419; length =   1833
+   4 vs.  18:  DIST =  0.5843; p = 0.1435; q = 0.4408; length =   1833
+   4 vs.  19:  DIST =  0.5903; p = 0.1440; q = 0.4463; length =   1833
+   4 vs.  20:  DIST =  0.5961; p = 0.1471; q = 0.4490; length =   1842
+   4 vs.  21:  DIST =  0.5879; p = 0.1471; q = 0.4408; length =   1842
+   4 vs.  22:  DIST =  0.6012; p = 0.1506; q = 0.4506; length =   1833
+   5 vs.   6:  DIST =  0.0000; p = 0.0000; q = 0.0000; length =   1904
+   5 vs.   7:  DIST =  0.0000; p = 0.0000; q = 0.0000; length =   1904
+   5 vs.   8:  DIST =  0.0000; p = 0.0000; q = 0.0000; length =   1903
+   5 vs.   9:  DIST =  0.0000; p = 0.0000; q = 0.0000; length =   1903
+   5 vs.  10:  DIST =  0.0352; p = 0.0074; q = 0.0278; length =   1904
+   5 vs.  11:  DIST =  0.0352; p = 0.0074; q = 0.0279; length =   1903
+   5 vs.  12:  DIST =  0.0362; p = 0.0079; q = 0.0284; length =   1904
+   5 vs.  13:  DIST =  0.1250; p = 0.0205; q = 0.1045; length =   1904
+   5 vs.  14:  DIST =  0.1389; p = 0.0247; q = 0.1142; length =   1901
+   5 vs.  15:  DIST =  0.1860; p = 0.0390; q = 0.1470; length =   1898
+   5 vs.  16:  DIST =  0.5854; p = 0.1435; q = 0.4419; length =   1833
+   5 vs.  17:  DIST =  0.5854; p = 0.1435; q = 0.4419; length =   1833
+   5 vs.  18:  DIST =  0.5843; p = 0.1435; q = 0.4408; length =   1833
+   5 vs.  19:  DIST =  0.5903; p = 0.1440; q = 0.4463; length =   1833
+   5 vs.  20:  DIST =  0.5961; p = 0.1471; q = 0.4490; length =   1842
+   5 vs.  21:  DIST =  0.5879; p = 0.1471; q = 0.4408; length =   1842
+   5 vs.  22:  DIST =  0.6012; p = 0.1506; q = 0.4506; length =   1833
+   6 vs.   7:  DIST =  0.0000; p = 0.0000; q = 0.0000; length =   1904
+   6 vs.   8:  DIST =  0.0000; p = 0.0000; q = 0.0000; length =   1903
+   6 vs.   9:  DIST =  0.0000; p = 0.0000; q = 0.0000; length =   1903
+   6 vs.  10:  DIST =  0.0352; p = 0.0074; q = 0.0278; length =   1904
+   6 vs.  11:  DIST =  0.0352; p = 0.0074; q = 0.0279; length =   1903
+   6 vs.  12:  DIST =  0.0362; p = 0.0079; q = 0.0284; length =   1904
+   6 vs.  13:  DIST =  0.1250; p = 0.0205; q = 0.1045; length =   1904
+   6 vs.  14:  DIST =  0.1389; p = 0.0247; q = 0.1142; length =   1901
+   6 vs.  15:  DIST =  0.1860; p = 0.0390; q = 0.1470; length =   1898
+   6 vs.  16:  DIST =  0.5854; p = 0.1435; q = 0.4419; length =   1833
+   6 vs.  17:  DIST =  0.5854; p = 0.1435; q = 0.4419; length =   1833
+   6 vs.  18:  DIST =  0.5843; p = 0.1435; q = 0.4408; length =   1833
+   6 vs.  19:  DIST =  0.5903; p = 0.1440; q = 0.4463; length =   1833
+   6 vs.  20:  DIST =  0.5961; p = 0.1471; q = 0.4490; length =   1842
+   6 vs.  21:  DIST =  0.5879; p = 0.1471; q = 0.4408; length =   1842
+   6 vs.  22:  DIST =  0.6012; p = 0.1506; q = 0.4506; length =   1833
+   7 vs.   8:  DIST =  0.0000; p = 0.0000; q = 0.0000; length =   1903
+   7 vs.   9:  DIST =  0.0000; p = 0.0000; q = 0.0000; length =   1903
+   7 vs.  10:  DIST =  0.0352; p = 0.0074; q = 0.0278; length =   1904
+   7 vs.  11:  DIST =  0.0352; p = 0.0074; q = 0.0279; length =   1903
+   7 vs.  12:  DIST =  0.0362; p = 0.0079; q = 0.0284; length =   1904
+   7 vs.  13:  DIST =  0.1250; p = 0.0205; q = 0.1045; length =   1904
+   7 vs.  14:  DIST =  0.1389; p = 0.0247; q = 0.1142; length =   1901
+   7 vs.  15:  DIST =  0.1860; p = 0.0390; q = 0.1470; length =   1898
+   7 vs.  16:  DIST =  0.5854; p = 0.1435; q = 0.4419; length =   1833
+   7 vs.  17:  DIST =  0.5854; p = 0.1435; q = 0.4419; length =   1833
+   7 vs.  18:  DIST =  0.5843; p = 0.1435; q = 0.4408; length =   1833
+   7 vs.  19:  DIST =  0.5903; p = 0.1440; q = 0.4463; length =   1833
+   7 vs.  20:  DIST =  0.5961; p = 0.1471; q = 0.4490; length =   1842
+   7 vs.  21:  DIST =  0.5879; p = 0.1471; q = 0.4408; length =   1842
+   7 vs.  22:  DIST =  0.6012; p = 0.1506; q = 0.4506; length =   1833
+   8 vs.   9:  DIST =  0.0000; p = 0.0000; q = 0.0000; length =   1903
+   8 vs.  10:  DIST =  0.0352; p = 0.0074; q = 0.0279; length =   1903
+   8 vs.  11:  DIST =  0.0352; p = 0.0074; q = 0.0279; length =   1903
+   8 vs.  12:  DIST =  0.0363; p = 0.0079; q = 0.0284; length =   1903
+   8 vs.  13:  DIST =  0.1251; p = 0.0205; q = 0.1046; length =   1903
+   8 vs.  14:  DIST =  0.1389; p = 0.0247; q = 0.1142; length =   1900
+   8 vs.  15:  DIST =  0.1861; p = 0.0390; q = 0.1471; length =   1897
+   8 vs.  16:  DIST =  0.5852; p = 0.1430; q = 0.4421; length =   1832
+   8 vs.  17:  DIST =  0.5852; p = 0.1430; q = 0.4421; length =   1832
+   8 vs.  18:  DIST =  0.5841; p = 0.1430; q = 0.4410; length =   1832
+   8 vs.  19:  DIST =  0.5901; p = 0.1436; q = 0.4465; length =   1832
+   8 vs.  20:  DIST =  0.5959; p = 0.1467; q = 0.4492; length =   1841
+   8 vs.  21:  DIST =  0.5877; p = 0.1467; q = 0.4411; length =   1841
+   8 vs.  22:  DIST =  0.6010; p = 0.1501; q = 0.4509; length =   1832
+   9 vs.  10:  DIST =  0.0352; p = 0.0074; q = 0.0279; length =   1903
+   9 vs.  11:  DIST =  0.0352; p = 0.0074; q = 0.0279; length =   1903
+   9 vs.  12:  DIST =  0.0363; p = 0.0079; q = 0.0284; length =   1903
+   9 vs.  13:  DIST =  0.1251; p = 0.0205; q = 0.1046; length =   1903
+   9 vs.  14:  DIST =  0.1389; p = 0.0247; q = 0.1142; length =   1900
+   9 vs.  15:  DIST =  0.1861; p = 0.0390; q = 0.1471; length =   1897
+   9 vs.  16:  DIST =  0.5852; p = 0.1430; q = 0.4421; length =   1832
+   9 vs.  17:  DIST =  0.5852; p = 0.1430; q = 0.4421; length =   1832
+   9 vs.  18:  DIST =  0.5841; p = 0.1430; q = 0.4410; length =   1832
+   9 vs.  19:  DIST =  0.5901; p = 0.1436; q = 0.4465; length =   1832
+   9 vs.  20:  DIST =  0.5959; p = 0.1467; q = 0.4492; length =   1841
+   9 vs.  21:  DIST =  0.5877; p = 0.1467; q = 0.4411; length =   1841
+   9 vs.  22:  DIST =  0.6010; p = 0.1501; q = 0.4509; length =   1832
+  10 vs.  11:  DIST =  0.0000; p = 0.0000; q = 0.0000; length =   1903
+  10 vs.  12:  DIST =  0.0042; p = 0.0016; q = 0.0026; length =   1904
+  10 vs.  13:  DIST =  0.1339; p = 0.0236; q = 0.1103; length =   1904
+  10 vs.  14:  DIST =  0.1447; p = 0.0274; q = 0.1173; length =   1901
+  10 vs.  15:  DIST =  0.1865; p = 0.0395; q = 0.1470; length =   1898
+  10 vs.  16:  DIST =  0.5876; p = 0.1495; q = 0.4381; length =   1833
+  10 vs.  17:  DIST =  0.5876; p = 0.1495; q = 0.4381; length =   1833
+  10 vs.  18:  DIST =  0.5881; p = 0.1500; q = 0.4381; length =   1833
+  10 vs.  19:  DIST =  0.5941; p = 0.1506; q = 0.4435; length =   1833
+  10 vs.  20:  DIST =  0.5999; p = 0.1531; q = 0.4468; length =   1842
+  10 vs.  21:  DIST =  0.5917; p = 0.1531; q = 0.4387; length =   1842
+  10 vs.  22:  DIST =  0.6045; p = 0.1566; q = 0.4479; length =   1833
+  11 vs.  12:  DIST =  0.0042; p = 0.0016; q = 0.0026; length =   1903
+  11 vs.  13:  DIST =  0.1340; p = 0.0236; q = 0.1104; length =   1903
+  11 vs.  14:  DIST =  0.1447; p = 0.0274; q = 0.1174; length =   1900
+  11 vs.  15:  DIST =  0.1866; p = 0.0395; q = 0.1471; length =   1897
+  11 vs.  16:  DIST =  0.5873; p = 0.1490; q = 0.4383; length =   1832
+  11 vs.  17:  DIST =  0.5873; p = 0.1490; q = 0.4383; length =   1832
+  11 vs.  18:  DIST =  0.5879; p = 0.1496; q = 0.4383; length =   1832
+  11 vs.  19:  DIST =  0.5939; p = 0.1501; q = 0.4438; length =   1832
+  11 vs.  20:  DIST =  0.5997; p = 0.1526; q = 0.4470; length =   1841
+  11 vs.  21:  DIST =  0.5915; p = 0.1526; q = 0.4389; length =   1841
+  11 vs.  22:  DIST =  0.6043; p = 0.1561; q = 0.4481; length =   1832
+  12 vs.  13:  DIST =  0.1350; p = 0.0236; q = 0.1113; length =   1904
+  12 vs.  14:  DIST =  0.1452; p = 0.0279; q = 0.1173; length =   1901
+  12 vs.  15:  DIST =  0.1876; p = 0.0406; q = 0.1470; length =   1898
+  12 vs.  16:  DIST =  0.5887; p = 0.1495; q = 0.4392; length =   1833
+  12 vs.  17:  DIST =  0.5887; p = 0.1495; q = 0.4392; length =   1833
+  12 vs.  18:  DIST =  0.5892; p = 0.1500; q = 0.4392; length =   1833
+  12 vs.  19:  DIST =  0.5952; p = 0.1506; q = 0.4446; length =   1833
+  12 vs.  20:  DIST =  0.6015; p = 0.1526; q = 0.4490; length =   1842
+  12 vs.  21:  DIST =  0.5923; p = 0.1526; q = 0.4397; length =   1842
+  12 vs.  22:  DIST =  0.6045; p = 0.1560; q = 0.4484; length =   1833
+  13 vs.  14:  DIST =  0.1442; p = 0.0283; q = 0.1159; length =   1907
+  13 vs.  15:  DIST =  0.1815; p = 0.0368; q = 0.1447; length =   1901
+  13 vs.  16:  DIST =  0.6034; p = 0.1513; q = 0.4521; length =   1838
+  13 vs.  17:  DIST =  0.6034; p = 0.1513; q = 0.4521; length =   1838
+  13 vs.  18:  DIST =  0.6028; p = 0.1518; q = 0.4510; length =   1838
+  13 vs.  19:  DIST =  0.6083; p = 0.1523; q = 0.4559; length =   1838
+  13 vs.  20:  DIST =  0.6113; p = 0.1527; q = 0.4586; length =   1847
+  13 vs.  21:  DIST =  0.6058; p = 0.1527; q = 0.4532; length =   1847
+  13 vs.  22:  DIST =  0.6159; p = 0.1534; q = 0.4625; length =   1838
+  14 vs.  15:  DIST =  0.1715; p = 0.0388; q = 0.1327; length =   1907
+  14 vs.  16:  DIST =  0.5970; p = 0.1532; q = 0.4438; length =   1841
+  14 vs.  17:  DIST =  0.5970; p = 0.1532; q = 0.4438; length =   1841
+  14 vs.  18:  DIST =  0.5975; p = 0.1543; q = 0.4432; length =   1841
+  14 vs.  19:  DIST =  0.6024; p = 0.1532; q = 0.4492; length =   1841
+  14 vs.  20:  DIST =  0.6086; p = 0.1568; q = 0.4519; length =   1850
+  14 vs.  21:  DIST =  0.6043; p = 0.1568; q = 0.4476; length =   1850
+  14 vs.  22:  DIST =  0.6095; p = 0.1554; q = 0.4541; length =   1841
+  15 vs.  16:  DIST =  0.5948; p = 0.1552; q = 0.4395; length =   1836
+  15 vs.  17:  DIST =  0.5948; p = 0.1552; q = 0.4395; length =   1836
+  15 vs.  18:  DIST =  0.5959; p = 0.1558; q = 0.4401; length =   1836
+  15 vs.  19:  DIST =  0.5991; p = 0.1541; q = 0.4450; length =   1836
+  15 vs.  20:  DIST =  0.6054; p = 0.1561; q = 0.4493; length =   1845
+  15 vs.  21:  DIST =  0.5973; p = 0.1561; q = 0.4412; length =   1845
+  15 vs.  22:  DIST =  0.6084; p = 0.1541; q = 0.4542; length =   1836
+  16 vs.  17:  DIST =  0.0011; p = 0.0011; q = 0.0000; length =   1904
+  16 vs.  18:  DIST =  0.0263; p = 0.0042; q = 0.0221; length =   1904
+  16 vs.  19:  DIST =  0.0431; p = 0.0095; q = 0.0336; length =   1904
+  16 vs.  20:  DIST =  0.1452; p = 0.0284; q = 0.1168; length =   1901
+  16 vs.  21:  DIST =  0.1478; p = 0.0263; q = 0.1215; length =   1901
+  16 vs.  22:  DIST =  0.1573; p = 0.0305; q = 0.1268; length =   1901
+  17 vs.  18:  DIST =  0.0252; p = 0.0032; q = 0.0221; length =   1904
+  17 vs.  19:  DIST =  0.0420; p = 0.0084; q = 0.0336; length =   1904
+  17 vs.  20:  DIST =  0.1441; p = 0.0274; q = 0.1168; length =   1901
+  17 vs.  21:  DIST =  0.1468; p = 0.0252; q = 0.1215; length =   1901
+  17 vs.  22:  DIST =  0.1562; p = 0.0295; q = 0.1268; length =   1901
+  18 vs.  19:  DIST =  0.0415; p = 0.0084; q = 0.0331; length =   1904
+  18 vs.  20:  DIST =  0.1389; p = 0.0252; q = 0.1136; length =   1901
+  18 vs.  21:  DIST =  0.1420; p = 0.0258; q = 0.1163; length =   1901
+  18 vs.  22:  DIST =  0.1531; p = 0.0305; q = 0.1226; length =   1901
+  19 vs.  20:  DIST =  0.1441; p = 0.0263; q = 0.1178; length =   1901
+  19 vs.  21:  DIST =  0.1420; p = 0.0274; q = 0.1147; length =   1901
+  19 vs.  22:  DIST =  0.1526; p = 0.0300; q = 0.1226; length =   1901
+  20 vs.  21:  DIST =  0.1218; p = 0.0256; q = 0.0962; length =   1913
+  20 vs.  22:  DIST =  0.1366; p = 0.0326; q = 0.1040; length =   1904
+  21 vs.  22:  DIST =  0.1481; p = 0.0278; q = 0.1203; length =   1904
+
+
+			Neighbor-joining Method
+
+ Saitou, N. and Nei, M. (1987) The Neighbor-joining Method:
+ A New Method for Reconstructing Phylogenetic Trees.
+ Mol. Biol. Evol., 4(4), 406-425
+
+
+ This is an UNROOTED tree
+
+ Numbers in parentheses are branch lengths
+
+
+ Cycle   1     =  SEQ:  16 (  0.00066) joins  SEQ:  17 (  0.00039)
+
+ Cycle   2     = Node:  16 (  0.01294) joins  SEQ:  18 (  0.01227)
+
+ Cycle   3     = Node:  16 (  0.00593) joins  SEQ:  19 (  0.02322)
+
+ Cycle   4     =  SEQ:  20 (  0.06398) joins  SEQ:  21 (  0.05782)
+
+ Cycle   5     = Node:  20 (  0.00603) joins  SEQ:  22 (  0.07540)
+
+ Cycle   6     = Node:  16 (  0.04885) joins Node:  20 (  0.00741)
+
+ Cycle   7     =  SEQ:  15 (  0.09550) joins Node:  16 (  0.43133)
+
+ Cycle   8     =  SEQ:  14 (  0.06916) joins Node:  15 (  0.01799)
+
+ Cycle   9     =  SEQ:  13 (  0.06603) joins Node:  14 (  0.00984)
+
+ Cycle  10     =  SEQ:  10 (  0.00000) joins  SEQ:  11 (  0.00000)
+
+ Cycle  11     = Node:  10 (  0.00159) joins  SEQ:  12 (  0.00261)
+
+ Cycle  12     = Node:  10 (  0.01919) joins Node:  13 (  0.04520)
+
+ Cycle  13     =  SEQ:   8 (  0.00000) joins  SEQ:   9 (  0.00000)
+
+ Cycle  14     =  SEQ:   1 (  0.00000) joins Node:   8 (  0.00000)
+
+ Cycle  15     = Node:   1 (  0.00000) joins  SEQ:   2 (  0.00000)
+
+ Cycle  16     = Node:   1 (  0.00000) joins  SEQ:   3 (  0.00000)
+
+ Cycle  17     = Node:   1 (  0.00000) joins  SEQ:   4 (  0.00000)
+
+ Cycle  18     =  SEQ:   5 (  0.00000) joins Node:  10 (  0.01443)
+
+ Cycle  19     = Node:   1 (  0.00000) joins  SEQ:   6 (  0.00000)
+
+ Cycle  20 (Last cycle, trichotomy):
+
+		 Node:   1 (  0.00000) joins
+		 Node:   5 (  0.00000) joins
+		  SEQ:   7 (  0.00000) 
